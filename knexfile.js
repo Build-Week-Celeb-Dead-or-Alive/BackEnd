@@ -30,7 +30,7 @@ module.exports = {
   },
 
   testing: {
-    client: 'pg',
+    client: 'sqlite3',
     connection: {
       filename: './data/test.db3',
     },
@@ -49,7 +49,7 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL || dbConnection,
+    connection: dbConnection,
     pool: {
       min: 2,
       max: 10
