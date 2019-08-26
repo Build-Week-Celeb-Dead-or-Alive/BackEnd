@@ -25,6 +25,10 @@
     "test": "cross-env DB_ENV=testing jest --watch",
     "heroku-postbuild": "npm install --production && knex migrate:latest && knex seed:run"
   },
+  "engines": {
+    "npm": "6.11.1",
+    "node": "12.6.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Build-Week-Celeb-Dead-or-Alive/BackEnd.git"
