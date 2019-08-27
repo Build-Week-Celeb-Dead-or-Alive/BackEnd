@@ -11,6 +11,7 @@ module.exports = {
 
 function getUsers() {
   return db('users')
+  .select('users.id', 'users.name', 'users.username', 'users.points')
 }
 
 async function addUser(user) {
@@ -28,7 +29,7 @@ function findBy(filter) {
 function addPointsToUser(changes, id) {
   return db("users")
     .update(changes)
-    .where({ id });
+    .where({ id })
   }
   
   function deleteUser(id) {

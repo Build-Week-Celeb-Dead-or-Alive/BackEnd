@@ -4,26 +4,28 @@ const Celebs = require('./celebs_model')
 
 
 router.get('/', (req, res) => {
-  console.log("all celebs")
   Celebs.getAllCelebs()
-  .then(pos => {
-    res.status(200).json(pos)
-  })
   .catch(err => res.send(err)) 
+  .then(celebs => {
+    res.status(200).json(celebs)
+  })
 });
+
 
 router.get('/:id', (req, res) => {
   let { id } = req.params;
 
   Celebs.findBy({ id })
-    .first() //without first() the user is returned but in an array
-    .then(celeb => {
-      console.log("celeb", celeb)
-      res.status(200).json(celeb)
-    })
     .catch(error => {
-      res.status(500).json("problem getting that celebrity");
-    });
+      res.status(500).json(error);
+    })
+    .then(celebs => {
+      if (celebs.length === 0) {
+        return res.status(404).json({message: `Could not find celeb with the ID of ${id}`})
+      } 
+
+      res.status(200).json(celebs[0])
+    })
 });
 
 module.exports = router;
