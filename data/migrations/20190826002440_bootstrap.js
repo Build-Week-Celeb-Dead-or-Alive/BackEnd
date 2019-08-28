@@ -4,7 +4,7 @@ exports.up = function(knex) {
   .createTable("celebs", celebs => {
     celebs.increments();
     celebs
-      .string("name", 128)
+      .text("name")
       .notNullable()
       .unique()
     celebs
@@ -20,19 +20,19 @@ exports.up = function(knex) {
    
   .createTable("users", users => {
     users.increments();
-    users.string("name", 128)
+    users.text("name")
       .notNullable()
     users
-      .string("username", 128)
+      .text("username")
       .notNullable()
       .unique();
-    users.string("password", 128)
+    users.text("password")
       .notNullable()
     users.integer("points", 128)
   })
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists("users")
+  knex.schema.dropTableIfExists("users")
   return knex.schema.dropTableIfExists("celebs")
 };
