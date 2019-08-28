@@ -1,5 +1,43 @@
 exports.seed = function(knex) {
   return knex('celebs').insert([{
+    "name": "Peggy Lee",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Peggy_Lee_1950.JPG/220px-Peggy_Lee_1950.JPG",
+    "isDead": true,    
+    "dob": "1920-05-26",
+    "dod": "2002-01-21"
+  },{
+    "name": "Tina Turner",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Tina_Turner_50th_Anniversary_Tour.jpg/250px-Tina_Turner_50th_Anniversary_Tour.jpg",
+    "isDead": false,    
+    "dob": "1939-11-26"
+  },{
+    "name": "Luther Vandross",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Luther_Vandross_and_Diana_Ross_2000.jpg/220px-Luther_Vandross_and_Diana_Ross_2000.jpg",
+    "isDead": true,    
+    "dob": "1951-04-20",
+    "dod": "1994-04-05"
+  },{
+    "name": "Queen Elizabeth II",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Queen_Elizabeth_the_Queen_Mother_portrait.jpg/220px-Queen_Elizabeth_the_Queen_Mother_portrait.jpg",
+    "isDead": false,    
+    "dob": "1926-04-21"
+  },{
+    "name": "Charles, Prince of Wales",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Charles_Prince_of_Wales.jpg/220px-Charles_Prince_of_Wales.jpg",
+    "isDead": false,    
+    "dob": "1948-11-04"
+  },{
+    "name": "Prince Philip, Duke of Edinburgh",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Duke_of_Edinburgh_33_Allan_Warren.jpg/170px-Duke_of_Edinburgh_33_Allan_Warren.jpg",
+    "isDead": false,    
+    "dob": "1921-06-10"
+  },{
+    "name": "Diana, Princess of Wales",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Diana%2C_Princess_of_Wales_1997_%282%29.jpg/220px-Diana%2C_Princess_of_Wales_1997_%282%29.jpg",
+    "isDead": true,    
+    "dob": "1961-07-01",
+    "dod": "1997-08-31"
+  },{
     "name": "Rhianna",
     "celebImage" : "https://i.pinimg.com/originals/2d/1f/e6/2d1fe6cab7df9c0c023b647a99d0de66.jpg",
     "isDead": false,
