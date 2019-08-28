@@ -8,7 +8,7 @@ exports.up = function(knex) {
       .notNullable()
       .unique()
     celebs
-      .string("celebImage")
+      .text("celebImage")
     celebs
       .boolean("isDead")
     celebs
