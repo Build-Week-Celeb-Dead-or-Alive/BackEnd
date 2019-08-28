@@ -334,6 +334,11 @@ exports.seed = function(knex) {
     "isDead": true,
     "dob": "1947-01-08",
     "dod": "2016-01-10"
+  },{
+    "name": "Yoko Ono",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/John_Lennon_en_zijn_echtgenote_Yoko_Ono_op_huwelijksreis_in_Amsterdam_hielden_pe%2C_Bestanddeelnr_922-2301.jpg/220px-John_Lennon_en_zijn_echtgenote_Yoko_Ono_op_huwelijksreis_in_Amsterdam_hielden_pe%2C_Bestanddeelnr_922-2301.jpg",
+    "isDead": true,    
+    "dob": "1967-02-20",
   },
 ])
 };
