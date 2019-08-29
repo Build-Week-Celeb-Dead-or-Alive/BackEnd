@@ -272,7 +272,6 @@ exports.seed = function(knex) {
     "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Jodie_Foster_C%C3%A9sars_2011_2_%28cropped%29.jpg/220px-Jodie_Foster_C%C3%A9sars_2011_2_%28cropped%29.jpg",
     "isDead": false,
     "dob": "1962-11-19",
-  },
-])
+  },])
 };
 

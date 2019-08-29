@@ -32,7 +32,7 @@ function addPointsToUser(changes, id) {
     .where({ id })
   }
   
-  function deleteUser(id) {
+function deleteUser(id) {
     return db("users")
     .del()
     .where({id});
