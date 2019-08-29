@@ -95,7 +95,7 @@ exports.seed = function(knex) {
     "dob": "1962-08-04",
   },{
     "name": "Mike Scioscia",
-    "celebImage" : "https://m.media-amazon.com/images/M/MV5BMTM1NjExNjg1OV5BMl5BanBnXkFtZTcwMTQ0NzIwMw@@._V1_UY317_CR1,0,214,317_AL_.jpg",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mikesosh.jpg/280px-Mikesosh.jpg",
     "isDead": false,    
     "dob": "1958-11-27",
   },{
