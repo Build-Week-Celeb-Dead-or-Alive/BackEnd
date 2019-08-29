@@ -72,6 +72,7 @@ router.post('/login', (req, res) => {
 
       res.status(200).json({
         message: `Welcome ${user.username}!`,
+        id: user.id,
         name: user.name,
         points: user.points,
         token,
