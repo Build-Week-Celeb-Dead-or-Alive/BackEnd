@@ -38,10 +38,10 @@ exports.seed = function(knex) {
     "dob": "1961-07-01",
     "dod": "1997-08-31"
   },{
-    "name": "Rhianna",
+    "name": "Rihanna",
     "celebImage" : "https://i.pinimg.com/originals/2d/1f/e6/2d1fe6cab7df9c0c023b647a99d0de66.jpg",
     "isDead": false,
-    "dob": "1958-06-02",
+    "dob": "1988-20-02",
   },{
     "name": "Tony Bennet",
     "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Tony_Bennett.jpg/220px-Tony_Bennett.jpg",
