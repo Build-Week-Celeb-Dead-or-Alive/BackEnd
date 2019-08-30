@@ -16,6 +16,7 @@ router.get('/:id', (req, res) => {
 
   Celebs.findBy({ id })
     .catch(error => {
+      console.log("unique error", error)
       res.status(500).json(error);
     })
     .then(celebs => {

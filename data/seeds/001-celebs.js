@@ -172,7 +172,7 @@ exports.seed = function(knex) {
   },
   {
     "name": "Michelle Kwan",
-    "celebImage" : "",
+    "celebImage" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Michelle_Kwan_Baltimore.jpg/220px-Michelle_Kwan_Baltimore.jpg",
     "isDead": false,    
     "dob": "1980-07-07"
   },
