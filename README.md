@@ -199,23 +199,11 @@ returns: message that user was deleted
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+You can run tests by installing and running Jest
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+The tests test that the server is returning the correct responses when correct and incorrect server requests are run
 
 ## Deployment
 
@@ -223,7 +211,11 @@ This API is optimized to be hosted with  [Heroku]((https://devcenter.heroku.com/
 
 ## Built With
 
-* [Knex]((http://knexjs.org/)) - SQL query builder
+* [Knex]((http://knexjs.org/)) - SQL query builder,
+* [Express]((https://expressjs.com/)) - Web framework for NodeJS
+* [JsonWebToken]((https://jwt.io/)) - Token creation
+* [node.js]((https://nodejs.org/en/about/)) - framework for building network applications
+
 
 ## Contributing
 
